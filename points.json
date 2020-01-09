@@ -1,0 +1,19 @@
+{
+    "points":[
+        {
+            "location":"Alajuela Oeste",
+            "latitude":10.013907,
+            "longitude":-84.22135
+        },
+        {
+            "location":"Grecia",
+            "latitude":10.080291,
+            "longitude":-84.32157
+        },
+        {
+            "location":"Centro Comercial Plaza Occidente",
+            "latitude":10.0780863,
+            "longitude":-84.4696217
+        }
+    ]
+}
