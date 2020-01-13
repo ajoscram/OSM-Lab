@@ -1,19 +1,34 @@
 {
     "points":[
         {
-            "location":"Alajuela Oeste",
-            "latitude":10.013907,
-            "longitude":-84.22135
+            "location":"El Prado",
+            "latitude":9.9280092,
+            "longitude":-84.0445633
         },
         {
-            "location":"Grecia",
-            "latitude":10.080291,
-            "longitude":-84.32157
+            "location":"Momemtum Pinares",
+            "latitude":9.9110719,
+            "longitude":-84.0180413
         },
         {
-            "location":"Centro Comercial Plaza Occidente",
-            "latitude":10.0780863,
-            "longitude":-84.4696217
+            "location":"Terramall",
+            "latitude":9.90173,
+            "longitude":-83.99630
+        },
+        {
+            "location":"Paseo Metrópoli",
+            "latitude":9.86695,
+            "longitude":-83.94350
+        },
+        {
+            "location":"Ruinas de Cartago",
+            "latitude":9.86391,
+            "longitude":-83.92078
+        },
+        {
+            "location":"Caballo Blanco",
+            "latitude":9.855664,
+            "longitude":-83.90433
         }
     ]
 }
