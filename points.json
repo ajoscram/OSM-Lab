@@ -2,31 +2,37 @@
     "points":[
         {
             "location":"El Prado",
+            "region":"San José",
             "latitude":9.9280092,
             "longitude":-84.0445633
         },
         {
-            "location":"Momemtum Pinares",
+            "location":"Momentum Pinares",
+            "region":"San José",
             "latitude":9.9110719,
             "longitude":-84.0180413
         },
         {
             "location":"Terramall",
+            "region":"San José",
             "latitude":9.90173,
             "longitude":-83.99630
         },
         {
             "location":"Paseo Metrópoli",
+            "region":"Cartago",
             "latitude":9.86695,
             "longitude":-83.94350
         },
         {
             "location":"Ruinas de Cartago",
+            "region":"Cartago",
             "latitude":9.86391,
             "longitude":-83.92078
         },
         {
             "location":"Caballo Blanco",
+            "region":"Cartago",
             "latitude":9.855664,
             "longitude":-83.90433
         }

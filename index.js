@@ -33,12 +33,19 @@ function main(){
     tiles.addTo(map);
 
     getPoints().then(json => {
+        //extract every point from the JSON
         const points = json.points;
         const route = [];
-        for(i = 0; i < points.length; i++){
+        for(let i = 0; i < points.length; i++){
             let waypoint = {latLng:L.latLng(points[i].latitude, points[i].longitude), name:"<b>"+points[i].location+"</b>"};
+            //sneakily attach the region to the waypoint
+            waypoint.region = points[i].region;
             route.push(waypoint);
         }
+        //Creating marker clusters
+        //currently hard-coded, but should be implemented dynamically on a real app
+        const sanJoseCluster = L.markerClusterGroup();
+        const cartagoCluster = L.markerClusterGroup();
         //options for the routing control
         //the route is passed via the waypoints property
         L.Routing.control({ 
@@ -55,8 +62,20 @@ function main(){
                         icon = finish;
                     else
                         icon = burger;
-                    return L.marker(waypoint.latLng, {icon}).bindPopup(waypoint.name);
+                    
+                    marker = L.marker(waypoint.latLng, {icon}).bindPopup(waypoint.name);
+
+                    //adding marker to corresponding cluster
+                    if(waypoint.region == "San José")
+                        sanJoseCluster.addLayer(marker);
+                    else if(waypoint.region == "Cartago")
+                        cartagoCluster.addLayer(marker);
+
+                    return marker;
                 }
         }).addTo(map);
+        //adding the cluster layers to the map
+        map.addLayer(sanJoseCluster);
+        map.addLayer(cartagoCluster);
     });
 }
